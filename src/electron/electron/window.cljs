@@ -14,6 +14,16 @@
 
 (defonce *quitting? (atom false))
 
+;; Append a switch to disable site isolation trials
+(.appendSwitch app.commandLine "disable-site-isolation-trials")
+
+;; Set webPreferences to disable web security
+(let [web-prefs
+      {:webSecurity false}]
+  (set! (.-webPreferences electron.BrowserWindow) web-prefs))
+
+
+
 (def MAIN_WINDOW_ENTRY (if dev?
                          ;;"http://localhost:3001"
                          (str "file://" (node-path/join js/__dirname "index.html"))
