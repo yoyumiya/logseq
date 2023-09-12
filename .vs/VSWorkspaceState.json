@@ -1,0 +1,10 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\electron",
+    "\\src\\electron\\electron"
+  ],
+  "SelectedNode": "\\src\\electron\\electron\\window.cljs",
+  "PreviewInSolutionExplorer": false
+}
