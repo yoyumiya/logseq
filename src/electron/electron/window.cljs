@@ -15,8 +15,10 @@
 (defonce *quitting? (atom false))
 
 (def MAIN_WINDOW_ENTRY (if dev?
-                         "http://localhost:63342/app/index.html"
-                         "http://localhost:63342/app/electron.html"))
+                         ;;"http://localhost:3001"
+                         (str "http://localhost:63342/itunesArt/index.html")
+                         (str "http://localhost:63342/itunesArt/electron.html")))
+
 
 (defn create-main-window!
   ([]
