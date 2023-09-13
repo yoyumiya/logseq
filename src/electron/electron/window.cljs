@@ -14,10 +14,12 @@
 
 (defonce *quitting? (atom false))
 
-(def MAIN_WINDOW_ENTRY (if dev?
-                         "http://localhost:63342/app/index.html"
+(def MAIN_WINDOW_ENTRY "http://localhost:63342/app/index.html")
+
+;;(def MAIN_WINDOW_ENTRY (if dev?
+;;                         "http://localhost:63342/app/index.html"
                          ;;(str "file://" (node-path/join js/__dirname "index.html"))
-                         (str "file://" (node-path/join js/__dirname "electron.html"))))
+;;                         (str "file://" (node-path/join js/__dirname "electron.html"))))
 
 (defn create-main-window!
   ([]

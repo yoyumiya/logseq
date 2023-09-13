@@ -1,9 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\docs\\assets",
+    "\\scripts\\src",
+    "\\scripts\\src\\logseq",
+    "\\scripts\\src\\logseq\\tasks",
+    "\\scripts\\src\\logseq\\tasks\\dev",
     "\\src",
     "\\src\\electron",
-    "\\src\\electron\\electron"
+    "\\src\\main\\electron",
+    "\\src\\main\\frontend",
+    "\\static"
   ],
   "SelectedNode": "\\src\\electron\\electron\\window.cljs",
   "PreviewInSolutionExplorer": false
